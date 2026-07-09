@@ -50,6 +50,17 @@ document.querySelectorAll('.m-sub li').forEach(sub=>{
   });
 });
 
+const userMenuBtn = document.getElementById('userMenuBtn');
+if(userMenuBtn){
+  userMenuBtn.addEventListener('click', (e)=>{
+    e.stopPropagation();
+    userMenuBtn.classList.toggle('open');
+  });
+  document.addEventListener('click', ()=>{
+    userMenuBtn.classList.remove('open');
+  });
+}
+
 function showMenuList(menuName){
   document.querySelectorAll('.masters-list').forEach(list=>{
     list.style.display = list.getAttribute('data-menu') === menuName ? 'block' : 'none';
@@ -95,7 +106,7 @@ function initLayout(){
     mastersPanel.classList.add('show');
   }
   backdrop.classList.remove('show');
-  showMenuList('Masters');
+  showMenuList('Dashboard');
 }
 window.addEventListener('resize', initLayout);
 initLayout();

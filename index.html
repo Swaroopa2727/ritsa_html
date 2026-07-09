@@ -28,332 +28,123 @@
       <i class="bi bi-list fs-5"></i>
     </button>
     <div class="rail-nav">
-      <a class="rail-link" data-menu="Dashboard" data-panel-toggle><i class="bi bi-grid-1x2"></i>Dashboard</a>
-      <a class="rail-link active" data-menu="Masters" data-panel-toggle><i class="bi bi-archive"></i>Masters</a>
-      <a class="rail-link" data-menu="Procurement"><i class="bi bi-cart3"></i>Procurement</a>
-      <a class="rail-link" data-menu="Inventory"><i class="bi bi-box-seam"></i>Inventory</a>
-      <a class="rail-link" data-menu="Production"><i class="bi bi-diagram-3"></i>Production</a>
-      <a class="rail-link" data-menu="Warehouse"><i class="bi bi-shield-check"></i>Warehouse</a>
-      <a class="rail-link" data-menu="Sales"><i class="bi bi-graph-up-arrow"></i>Sales</a>
-      <a class="rail-link" data-menu="Reports"><i class="bi bi-file-earmark-text"></i>Reports</a>
-      <a class="rail-link" data-menu="Admin"><i class="bi bi-people"></i>Admin</a>
+      <a class="rail-link active" data-menu="Dashboard" data-panel-toggle><i class="bi bi-grid-1x2"></i>Dashboard</a>
+      <a class="rail-link" data-menu="Master Data" data-panel-toggle><i class="bi bi-archive"></i>Master Data</a>
+      <a class="rail-link" data-menu="Purchasing"><i class="bi bi-cart3"></i>Purchasing</a>
+      <a class="rail-link" data-menu="Goods Receipt"><i class="bi bi-truck"></i>Goods Receipt</a>
+      <a class="rail-link" data-menu="Inventory Management"><i class="bi bi-box-seam"></i>Inventory Management</a>
+      <a class="rail-link" data-menu="Quality Management"><i class="bi bi-shield-check"></i>Quality Management</a>
+      <a class="rail-link" data-menu="Warehouse Management"><i class="bi bi-diagram-3"></i>Warehouse Management</a>
+      <a class="rail-link" data-menu="Physical Inventory"><i class="bi bi-stack"></i>Physical Inventory</a>
+      <a class="rail-link" data-menu="Reports & Analytics"><i class="bi bi-file-earmark-text"></i>Reports & Analytics</a>
+      <a class="rail-link" data-menu="Administration"><i class="bi bi-people"></i>Administration</a>
     </div>
   </nav>
 
   <!-- MASTERS PANEL -->
   <aside class="masters-panel show" id="mastersPanel">
     <div class="d-flex align-items-center">
-      <h6 class="title mb-0" id="panelTitle">Masters</h6>
+      <h6 class="title mb-0" id="panelTitle">Dashboard</h6>
       <button class="masters-close" id="mastersCloseBtn"><i class="bi bi-x-lg"></i></button>
     </div>
-    <!-- <div class="masters-search">
-      <i class="bi bi-search"></i>
-      <input type="text" placeholder="Search...">
-    </div> -->
 
-    <ul class="masters-list" data-menu="Dashboard" style="display:none">
-      <li class="master-item">
-        <div class="m-row">Overview<i class=""></i></div>
-        <ul class="m-sub"><li>Executive Summary</li><li>KPI Snapshot</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Production Dashboard<i class=""></i></div>
-        <ul class="m-sub"><li>Live Production</li><li>OEE Dashboard</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Quality Dashboard<i class=""></i></div>
-        <ul class="m-sub"><li>QC Trends</li><li>NC Analysis</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Inventory Dashboard<i class=""></i></div>
-        <ul class="m-sub"><li>Stock Levels</li><li>Aging Analysis</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Sales Dashboard<i class=""></i></div>
-        <ul class="m-sub"><li>Order Pipeline</li><li>Revenue Trends</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Dashboard">
+      <!-- <li class="master-item">
+        <div class="m-row">Dashboard<i class=""></i></div>
+      </li> -->
     </ul>
 
-    <ul class="masters-list" data-menu="Masters">
-      <li class="master-item">
-        <div class="m-row">Organization<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Company</li><li>Business Unit</li><li>Plant</li><li>Department</li><li>Cost Center</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Material Master<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Raw Material</li><li>Packaging Material</li><li>Finished Goods</li><li>Semi-Finished Goods</li><li>Material Groups</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Vendor Master<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Vendor Master</li><li>Vendor Category</li><li>Vendor Approval</li><li>Vendor Rating</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Customer Master<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Customer Master</li><li>Customer Group</li><li>Credit Terms</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Warehouse Master<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Warehouse</li><li>Storage Location</li><li>Bin Master</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Equipment Master<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Equipment</li><li>Equipment Category</li><li>Calibration Schedule</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Finance Masters<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Chart of Accounts</li><li>Tax Master</li><li>Currency Master</li><li>Payment Terms</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Quality Masters<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Specification Master</li><li>Test Parameters</li><li>AQL Master</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Compliance<i class=""></i></div>
-        <ul class="m-sub">
-          <li>License Master</li><li>Regulatory Master</li><li>Audit Checklist</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Documents<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Document Types</li><li>SOP Master</li><li>Document Templates</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Workflow<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Approval Workflow</li><li>Escalation Matrix</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Barcode &amp; Labels<i class=""></i></div>
-        <ul class="m-sub">
-          <li>Label Templates</li><li>Barcode Format</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">System Configuration<i class=""></i></div>
-        <ul class="m-sub">
-          <li>User Roles</li><li>Number Ranges</li><li>Print Settings</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Integration<i class=""></i></div>
-        <ul class="m-sub">
-          <li>API Configuration</li><li>Third-party Integration</li>
-        </ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Generic Lookups<i class=""></i></div>
-        <ul class="m-sub">
-          <li>UOM Master</li><li>Reason Codes</li><li>Status Master</li>
-        </ul>
-      </li>
+    <ul class="masters-list" data-menu="Master Data" style="display:none">
+      <li class="master-item"><div class="m-row">Organization<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Materials<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Business Partners<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Warehouse<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Purchasing<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Inventory<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Quality<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Configuration<i class=""></i></div></li>
     </ul>
 
-    <ul class="masters-list" data-menu="Procurement" style="display:none">
-      <li class="master-item">
-        <div class="m-row">Purchase Requisition<i class=""></i></div>
-        <ul class="m-sub"><li>Create PR</li><li>PR Approval</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Purchase Order<i class=""></i></div>
-        <ul class="m-sub"><li>Create PO</li><li>PO Tracking</li><li>PO Amendment</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Vendor Quotation<i class=""></i></div>
-        <ul class="m-sub"><li>RFQ</li><li>Quotation Comparison</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Goods Receipt<i class=""></i></div>
-        <ul class="m-sub"><li>GRN</li><li>GRN Reversal</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Purchase Return<i class=""></i></div>
-        <ul class="m-sub"><li>Return Note</li><li>Debit Note</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Contract Master<i class=""></i></div>
-        <ul class="m-sub"><li>Rate Contracts</li><li>Blanket Orders</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Purchasing" style="display:none">
+      <li class="master-item"><div class="m-row">Purchase Requisition<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Request for Quotation (RFQ)<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Quotation Comparison<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Purchase Order<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Purchase Contracts<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Purchase Scheduling<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Purchase History<i class=""></i></div></li>
     </ul>
 
-    <ul class="masters-list" data-menu="Inventory" style="display:none">
-      <li class="master-item">
-        <div class="m-row">Stock Overview<i class=""></i></div>
-        <ul class="m-sub"><li>Stock Summary</li><li>Stock Ledger</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Stock Transfer<i class=""></i></div>
-        <ul class="m-sub"><li>Inter-Plant Transfer</li><li>Inter-Store Transfer</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Stock Adjustment<i class=""></i></div>
-        <ul class="m-sub"><li>Adjustment Entry</li><li>Write-off</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Physical Verification<i class=""></i></div>
-        <ul class="m-sub"><li>Cycle Count</li><li>Annual Stock Take</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Batch Tracking<i class=""></i></div>
-        <ul class="m-sub"><li>Batch Genealogy</li><li>Batch Status</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Expiry Management<i class=""></i></div>
-        <ul class="m-sub"><li>Expiry Alerts</li><li>Near-Expiry Report</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Goods Receipt" style="display:none">
+      <li class="master-item"><div class="m-row">Advance Shipment Notice<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Goods Receipt<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Inspection Receipt<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Quarantine Receipt<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Barcode Labels<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Receipt Register<i class=""></i></div></li>
     </ul>
 
-    <ul class="masters-list" data-menu="Production" style="display:none">
-      <li class="master-item">
-        <div class="m-row">Production Planning<i class=""></i></div>
-        <ul class="m-sub"><li>MPS</li><li>Capacity Planning</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Work Order<i class=""></i></div>
-        <ul class="m-sub"><li>Create Work Order</li><li>WO Tracking</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">BOM Management<i class=""></i></div>
-        <ul class="m-sub"><li>BOM Master</li><li>BOM Versioning</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Batch Record<i class=""></i></div>
-        <ul class="m-sub"><li>eBMR</li><li>Batch Deviation</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Shop Floor Execution<i class=""></i></div>
-        <ul class="m-sub"><li>Stage Tracking</li><li>Machine Log</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Yield Analysis<i class=""></i></div>
-        <ul class="m-sub"><li>Yield Report</li><li>Wastage Analysis</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Inventory Management" style="display:none">
+      <li class="master-item"><div class="m-row">Stock Overview<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Goods Issue<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Goods Receipt<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Stock Transfer<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Transfer Posting<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Stock Adjustment<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Batch Management<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Serial Number Management<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Expiry Management<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Material Ledger<i class=""></i></div></li>
     </ul>
 
-    <ul class="masters-list" data-menu="Warehouse" style="display:none">
-      <li class="master-item">
-        <div class="m-row">Bin Management<i class=""></i></div>
-        <ul class="m-sub"><li>Bin Master</li><li>Bin Utilization</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Putaway<i class=""></i></div>
-        <ul class="m-sub"><li>Putaway Rules</li><li>Putaway Confirmation</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Picking<i class=""></i></div>
-        <ul class="m-sub"><li>Pick List</li><li>Pick Confirmation</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Dispatch<i class=""></i></div>
-        <ul class="m-sub"><li>Dispatch Planning</li><li>Dispatch Note</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Warehouse Transfer<i class=""></i></div>
-        <ul class="m-sub"><li>Stock Transfer Order</li><li>Transfer Confirmation</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Cycle Count<i class=""></i></div>
-        <ul class="m-sub"><li>Count Schedule</li><li>Variance Report</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Quality Management" style="display:none">
+      <li class="master-item"><div class="m-row">Sampling<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Inspection<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Usage Decision<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Material Release<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Material Rejection<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Retest<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Deviations<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">CAPA<i class=""></i></div></li>
     </ul>
 
-    <ul class="masters-list" data-menu="Sales" style="display:none">
-      <li class="master-item">
-        <div class="m-row">Sales Order<i class=""></i></div>
-        <ul class="m-sub"><li>Create SO</li><li>SO Tracking</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Sales Quotation<i class=""></i></div>
-        <ul class="m-sub"><li>Quotation Entry</li><li>Quotation Approval</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Invoice<i class=""></i></div>
-        <ul class="m-sub"><li>Tax Invoice</li><li>Credit Note</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Sales Return<i class=""></i></div>
-        <ul class="m-sub"><li>Return Note</li><li>Replacement</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Customer Ledger<i class=""></i></div>
-        <ul class="m-sub"><li>Statement of Account</li><li>Ageing Report</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Sales Analytics<i class=""></i></div>
-        <ul class="m-sub"><li>Region-wise Sales</li><li>Product-wise Sales</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Warehouse Management" style="display:none">
+      <li class="master-item"><div class="m-row">Put Away<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Bin Management<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Picking<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Packing<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Internal Transfer<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Warehouse Transfers<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Cycle Counting<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Warehouse Monitor<i class=""></i></div></li>
     </ul>
 
-    <ul class="masters-list" data-menu="Reports" style="display:none">
-      <li class="master-item">
-        <div class="m-row">Production Reports<i class=""></i></div>
-        <ul class="m-sub"><li>Daily Production</li><li>Batch Yield Report</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Inventory Reports<i class=""></i></div>
-        <ul class="m-sub"><li>Stock Valuation</li><li>Stock Movement</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Quality Reports<i class=""></i></div>
-        <ul class="m-sub"><li>QC Summary</li><li>Deviation Report</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Sales Reports<i class=""></i></div>
-        <ul class="m-sub"><li>Sales Summary</li><li>Customer-wise Sales</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Compliance Reports<i class=""></i></div>
-        <ul class="m-sub"><li>License Status</li><li>Audit Log</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Custom Reports<i class=""></i></div>
-        <ul class="m-sub"><li>Report Builder</li><li>Saved Reports</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Physical Inventory" style="display:none">
+      <li class="master-item"><div class="m-row">Physical Count<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Count Verification<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Inventory Differences<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Inventory Adjustment<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Inventory Closing<i class=""></i></div></li>
     </ul>
 
-    <ul class="masters-list" data-menu="Admin" style="display:none">
-      <li class="master-item">
-        <div class="m-row">User Management<i class=""></i></div>
-        <ul class="m-sub"><li>Users</li><li>User Groups</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Roles &amp; Permissions<i class=""></i></div>
-        <ul class="m-sub"><li>Role Master</li><li>Access Matrix</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Audit Trail<i class=""></i></div>
-        <ul class="m-sub"><li>Login History</li><li>Change Log</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">System Settings<i class=""></i></div>
-        <ul class="m-sub"><li>General Settings</li><li>Notification Settings</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">License Management<i class=""></i></div>
-        <ul class="m-sub"><li>License Details</li><li>Renewal Schedule</li></ul>
-      </li>
-      <li class="master-item">
-        <div class="m-row">Backup &amp; Restore<i class=""></i></div>
-        <ul class="m-sub"><li>Backup Schedule</li><li>Restore Point</li></ul>
-      </li>
+    <ul class="masters-list" data-menu="Reports & Analytics" style="display:none">
+      <li class="master-item"><div class="m-row">Purchasing Reports<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Inventory Reports<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Warehouse Reports<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Quality Reports<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Batch Traceability<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Expiry Reports<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Vendor Performance<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Dashboard Analytics<i class=""></i></div></li>
+    </ul>
+
+    <ul class="masters-list" data-menu="Administration" style="display:none">
+      <li class="master-item"><div class="m-row">Users<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Roles<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Approval Workflow<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Number Series<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">Audit Trail<i class=""></i></div></li>
+      <li class="master-item"><div class="m-row">System Settings<i class=""></i></div></li>
     </ul>
   </aside>
 
@@ -387,13 +178,19 @@
           <i class="bi bi-gear"></i>
           <span class="lbl">Settings</span>
         </div>
-        <div class="tb-user">
+        <div class="tb-user" id="userMenuBtn">
           <img src="https://i.pravatar.cc/80?img=12" alt="John Doe">
-          <div>
+          <div class="user-info">
             <div class="name">John Doe</div>
             <div class="role">System Administrator</div>
           </div>
           <i class="bi bi-chevron-down text-muted d-none d-sm-inline" style="font-size:12px;"></i>
+          <div class="user-dropdown" id="userDropdown">
+            <a href="#" class="dropdown-link">My account</a>
+            <a href="#" class="dropdown-link">Settings</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-link logout">Logout</a>
+          </div>
         </div>
       </div>
     </header>
