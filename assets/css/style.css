@@ -269,14 +269,15 @@ a{text-decoration:none;color:inherit;}
   width:100%;
   max-width:42px;
   height:180px;
-  border-radius:999px;
+  /* border-radius:999px; */
   /* background:#F3F5F8; */
   overflow:hidden;
   display:flex;
   align-items:flex-end;
 }
 .chart-bar-fill{
-  width:50%; border-radius:999px 999px 0 0;
+  width:50%;
+  /* border-radius:999px 999px 0 0; */
 }
 .chart-bar-fill.target{background: #3763b7;}
 .chart-bar-fill.achieved{background: #0d7cbf;}
